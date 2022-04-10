@@ -1,0 +1,28 @@
+<html>
+
+  <head>
+    <style>
+      #empty{
+          margin-top:50px;
+          margin-bottom: 100px;
+          border:1px solid tomato;
+          /* 만약 위의 보더값을 없애면 시각적인 효과가 사라지기
+          때문에 위에있는 마진 값과 그 아래에 있는 마진값중에 큰값이 마진 값으로 적용. 
+          즉 100만큼 가지게된다. */
+      }
+      #normal{
+          background-color: aqua;
+          margin-top: 70px; 
+          /* 이 역시 마찬가지로 위에있는 태그의 마진 값이 아래의  
+          마진값보다 크기 때문에 위의 마진 바텀이 대신한다
+          empty.margin-bottom(100) > normal.margin-top(70) */   
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="empty">empty</div>
+    <div id="normal">normal</div>
+  </body>
+
+</html>

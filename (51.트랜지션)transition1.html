@@ -1,0 +1,32 @@
+<html>
+
+  <head>
+    <style>
+      a{
+        font-size: 3rem;
+        display: inline-block;
+
+       /* transition-property: all --> transition-property: font-size transform; 어떤 속성에 대해 트렌지션 할 것인가?*/
+       /* transition-duration: 1s; 장면 전환이 1초에 걸쳐서 일어난다.*/
+        
+        transition: all 1s;
+
+        /* 각각도 가능
+        transtion:font-size 1s, transform 0.1s */
+    
+    }
+       
+       a:active{ /*active는 클릭했을 때*/
+        transform: translate(20px, 20px);
+
+        /* 중요!! transform은 엘리먼트가 display가 인라인 이거나 블럭 일때만 가능 */
+        font-size: 2rem;
+    }
+    </style>
+  </head>
+
+  <body>
+    <a href="#">click</a>
+  </body>
+
+</html>

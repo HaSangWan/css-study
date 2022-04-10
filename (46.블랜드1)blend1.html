@@ -1,0 +1,32 @@
+<html>
+    <!-- filter은 하나의 이미지만 변경이 가능한데 blend는 두 개의 이미지 혹은 더 많은 이미지를 겹쳐 
+        놓았을 때 서로다른 색상 차이를 여러가지기준에 따라서 
+        혼합해서 이펙트를 이끈다 -->
+
+
+  <head>
+    <style>
+      .blend{
+        height:400px;
+        border: 5px solid ;
+        /* background-color: green; */
+        background-color: rgb(255,0,0,0.5); /*네 번 째는 투명도이다. 빨간색의 투명도가 0.5*/
+        background-size: cover; /*이렇게 하면 화면에 사진이 전부 보인다.*/
+        background-image: url('bom.jpg'); /*백그라운드 컬러보다 이미지가 우선이다.*/
+        /* 혼합 할려고 하는 대상이 있어야하는데 그것이 백그라운드 이미지와 컬러이다. */
+        /*background-blend-mode: color; 위의 백그라운드 컬러와 사진이 혼합되는 것*/
+        background-blend-mode:saturation;
+    }
+    .blend:hover{   /*(마우스를 블랜드 효과가 들어간 사진에 올려 놓을 때 )블랜드 효과 같은 것들을 시각적으로 사용자와 상호작용 할 수 있게 함*/
+        background-color: rgb(255,0,0,1);
+        transition: background-color 5s;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="blend"></div>
+  </body>
+
+</html>

@@ -1,0 +1,21 @@
+<html>
+
+  <head>
+      chrome의 검사에서 h1을 클릭해보면 살구색 영역이 겹치는 것을 볼 수있다.
+        위에 있는 태그와 아래에 있는 태그중에 큰 값이 두개의 태그 사이의 간격이된다.
+        만약 겹침 연상이 없더라면 margin-collasping1에서 저렇게 좋게 표시되지않고 엄청 멀리 떨어져서 보기 불편하게 될 것이다.
+  <style>
+       h1{
+           border:1px solid red;
+           margin:100px;
+       }
+
+   </style>
+  </head>
+
+  <body>
+    <h1>Hello world</h1>
+    <h1>Hello world</h1>
+  </body>
+
+</html>

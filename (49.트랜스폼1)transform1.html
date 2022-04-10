@@ -1,0 +1,30 @@
+<html>
+    <!-- 엘리먼트의 크기, 회전, 비틀기 -->
+  <head>
+    <style>
+      h1{
+        background-color: green;
+        color: white;
+        display: inline-block; /*백그라운드 컬러가 글자에 맞게 배치된다.*/
+        /* 중요!! transform은 엘리먼트가 display가 인라인 이거나 블럭 일때만 가능 */
+        padding: 5px;
+        font-size: 3rem;
+        margin:300px;
+        /*transform: scaleX(0.5);  (X축)1은 기본값 2는 두배 했다 0.5는 크기를 0.5배했다.*/
+        /*transform: scaleY(0.5);  이렇게 하면 X축에 대한 효과가 사라진다. 그 이유는 아래있는 트랜스폼이 위에 있는 트랜프롬을 덮어버리기 때문엔*/
+      
+        /* 여러개의 트랜프폼을 사용 할 때 */
+        transform: 
+        /* scaleX(2) 
+          scaleY(2); */
+          scale(2, 2)
+          ;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>hello transform</h1>
+  </body>
+
+</html>

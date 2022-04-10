@@ -1,0 +1,36 @@
+<html>
+    <!-- 여러가지 웹페이지가 동일한 css를 가지고있을 때 여러가지 문제가 생긴다.
+    만약 천개의 페이지의 css를 수정하려면 너무 많은 시간이 오래걸린다. 
+이 문제를 근본적으로 해결하는 것의 import , link 
+
+
+중요!! 하는 과정
+중복된 것을 없애고 000.css 파일을 만든다음 link의 href안에 넣어주면된다.
+
+style.css만 변경하면 몇 개의 웹사이트이든 수정이 가능하다.
+
+
+link와 import 차이점
+link는 html태그로 여러분이 css를 로드 할 때 사용
+import는 css 안에서 css를 로드 할 때 -> 그래서 style 안에 import 를써주어야함
+
+-->
+  <head>
+    <!--
+    <style>
+      중복되는 부분
+       h1{            
+          color:red;
+      }
+    </style>
+  -->
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1>page1</h1>
+  </body>
+
+</html>
+ 

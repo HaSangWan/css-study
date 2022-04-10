@@ -1,0 +1,31 @@
+<html>
+
+  <head>
+    <style>
+      div{
+        display: inline-block;
+        background-color: aqua;
+        color:azure;
+        padding: 10px;
+        width: 100px;
+        height: 50px;
+
+        transition:height 1s; /*height에 대해서 1초동안 장면전환이 된다.*/
+        /* 위아래로 커지는 속도는 이지(ease)값이다. */
+        /*transition-timing-function: ease; 이게 기본값*/
+        transition-timing-function: linear; /*좀 느려짐*/
+    }
+      div:hover{
+        height:400px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+        TRANSITION
+    </div>
+
+  </body>
+
+</html>

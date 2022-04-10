@@ -1,0 +1,38 @@
+<html>
+
+  <head>
+      박스란? 각자의 태그들이 화면에 표시 되어있는데 그 태그의 부피를 설정한다
+      여백이라던지 크기라던지 등등
+      중요함
+      p태그도 block level element -> 줄바꿈이 된다. block
+      but 박스모델은 inline 에서는 조금 다르게 동작함 -> width, height 값이 적용되지않는다
+      <style>
+        p,a{
+            /*border-width:10px;
+            border-style: soild;
+            border-color: red; */
+
+            border:10px solid red;
+            padding:20px; /*20px만큼 화면이 멀어짐 https://coding-factory.tistory.com/187 (마진과 패딩의 차이점)*/
+            margin:40px;/*p태그와 p태그의 간격*/
+            width:120px;/*p태그는 block level element 인데 전체 화면을 사용하고 싶지않을때 width*/
+        }
+
+      </style>
+      
+
+  </head>
+
+  <body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At, in!
+
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At, in!
+
+    </p>
+    <a href="http">안녕하세요</a>
+  </body>
+
+</html>

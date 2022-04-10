@@ -1,0 +1,31 @@
+<!-- 어떤 이미지, 텍스트 같은 그래픽 대상에게 여러 가지 효과를 줄 수 있는 기능
+ex/ 사진을 뿌옇게하기. -->
+
+<!-- 필터기능은 원본이미지는 그대로 유지하면서 코드를 ㅌ오해서 효과를 주는것
+그 효과의 텍스트라고 한다면 선택,복사,검색을 할 수 있음  -->
+
+<html>
+
+  <head>
+    <style>
+
+        img{
+            transition: all 1s; /*필터 처리를 좀 더 자연스럽게 , 변환한다 모든 필터를 1초동안, ex/transition: background-color 5s;*/
+        }
+        img:hover{  /*마우스를 올려놨을 때 필터 적용*/
+          -webkit-filter: grayscale(100%) blur(3px); /*그레이 색으로 변경 , 블러처리*/
+          filter: grayscale(100%);
+         }
+
+         h1{
+          filter: blur(3px);  /*텍스트에게 블러효과 처리*/
+         }
+    </style>
+  </head>
+    
+  <body>
+    <h1>BOM</h1>
+    <img src="bom.jpg" alt="">
+  </body>
+
+</html>

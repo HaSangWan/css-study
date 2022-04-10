@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <style>
+      h1{
+        background-color: green;
+        color: white;
+        display: inline-block; 
+        /* 중요!! transform은 엘리먼트가 display가 인라인 이거나 블럭 일때만 가능 */
+        padding: 5px;
+        font-size: 3rem;
+        margin:100px;
+
+       
+      }
+
+      h1:hover{
+        transform: 
+         scale(1.5)
+        ;
+        transform-origin: left top; /*왼쪽 맨위 점을 중심으로 커진다.*/
+        transition: all 1s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>hello transform</h1>
+  </body>
+
+</html>

@@ -1,0 +1,32 @@
+<html>
+  <head>
+    id 로 쓰면 안되는 이유: 두 개 이상은 클래스 개념으로 그룹핑을 해야됨.
+    id는 단 한번만 등장하여야한다. 한번 쓸 경우 다시는 select는 등장 하면 안된다.
+    여러번 등장하는거면 class 로 그룹핑을 해주어야한다.
+
+    앞에 .을 붙이면 클래스 선택자, #을붙이면 아이디선택자
+    <style media="screen">
+      li {
+        color:green;
+        text-decoration:underline;
+      }
+      #select {
+        font-size:30px;
+      }
+
+      .deactive {
+        text-decoration:line-through;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li class ="deactive">Html</li>
+      <li id ="select">css</li>
+      <li class ="deactive">javascript</li>
+    </ul>
+  </body>
+
+</html>

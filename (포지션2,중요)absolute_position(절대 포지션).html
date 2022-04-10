@@ -1,0 +1,55 @@
+<html>
+
+  <head>    
+     
+    <style>
+      #parent, #other{
+        border:5px solid tomato;
+      }
+      #me{
+        background-color: black;
+        color:white;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        /* 
+        1. relative는 부모를 기준으로 위치가 정해진다.
+        absolute는 부모중에 포지션 타입이 지정된 것으로부터 위치가 정해진다 -> 5번과 이어짐 
+        부모를 기준으로 해서 위치가 지정되고 그리고 부모와의 관계성이 끊기기때문에
+        자신의 크기는 자신의 콘텐츠 크기만해진다(폰트 크기를 말하는게아니고 부피를 말하는 것)(3번처럼 크기를 다시 작성해줘야함.)
+        부모역시 자식을 없는셈 친다. 
+
+        2. absolute는 모든 태그를 무시하고 직접 
+        위치를 설정 하는 것(html을 기준으로함) 
+        만약 absolute를 사용하게되면 더 이상 부모의 
+        소속이 아니다.(부모와 링크가 끊겨서 )
+
+        left와 top같은 것이 없으면 부모 엘리먼트 를 기준으로 위치가 생성되는데 
+        그건 부모에 속해있다는 뜻은 아니다.
+        
+        3. absolute를 사용하면 
+        width값과 height 값을 직접 정해줘야함
+        
+        4. absolute를 사용하게되면 html 엘리먼트를
+        기준으로 해서 위치가 결정되는 것
+
+        5.(가장중요) position이 absolute를 가진 태그는 position이 static인 부모들은 전부 무시하다가
+        position이 지정된 부모가 나타나면 그 부모에 대해서 위치가 offset이 된다.
+        즉 만약 parent위에 grand라는 부모가 있다고 치면 me는 parent가 아무 포지션도 가지지 않기 때문에 
+        무시하여 지나가고 grand는 position:relative로 포지션이 지정 되었기 때문에 grand로부터 위치가 지정된다.
+        --> fixed.html 에 필기해놓음 position: absolute 옆에*/
+        
+      
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="other">order</div>
+    <div id="parent">
+      parent
+      <div id="me">me</div>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,42 @@
+<html>
+
+  <head>
+    <!-- fix는 스크롤과 무관하게 (스크롤을 올리든 안올리든) 그 자리를 지킨다. 즉 고정되어진다. -->
+    <style>
+      body{
+        padding-top: 30px;
+      }
+      #parent, #other{
+          border:5px solid tomato;
+      }
+      #large{
+        height:10000px;
+        background-color: tomato;
+      }
+      #me{
+          background-color: black;
+          color: white;
+          /*position: absolute;      이렇게 하면 me태그는 static인 parent를 무시하고 grand의 위치에서 위치가 설정된다. ->> 지금은 지움*/
+          position: fixed; /*화면에 고정시킨다.*/
+          left: 0;
+          top:0;
+          width: 100%;
+          
+          text-align: center;
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="other">other</div>
+    
+        grand
+        <div id="parent">
+            parent
+            <div id="me">me</div>
+        </div>
+    <div id="large">large</div>
+  </body>
+
+</html>

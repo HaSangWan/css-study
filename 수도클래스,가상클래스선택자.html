@@ -1,0 +1,42 @@
+<html>
+
+  <head>
+    수도클랙: 마치 클래스 처럼 동작해서 가각의 엘리먼트의 상태에 따라서 선택자가
+    선택되기도하고 안되기도하는 선택자
+      a:active -> 이 html 중에 액티브 되어있는 a태그를 가르키는 선택자 즉 마우스를 눌렀을 때
+      a:hover -> 마우스를 올려놓았을 때.
+      a:visited -> 방문 했을 때
+      a:focus -> 포커스 되면
+    <style media="screen">
+      a:active {
+
+        color:green;
+      }
+
+      a:hover {
+        color:yellow;
+      }
+
+      a:visited{
+        color:red;
+      }
+
+      a:focus {
+        color:white;
+      }
+
+      input:focus {
+        background-color:black;
+        color:white;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <a href="www.naver.com">방문함</a>
+    <a href="www.daum.com">방문안함</a>
+    <p><input type="text"></p>
+  </body>
+
+</html>

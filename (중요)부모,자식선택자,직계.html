@@ -1,0 +1,50 @@
+<html>
+
+  <head>
+    ul li -> ul 밑에 있는 li만 color를 red로 변경한다.
+
+    ol>li -> 중요!! -> ol의 직계 자손들만 꾸며준다. 즉 html css JAVASCIRPT만 !
+    selector, declaration은 꾸며주지않는다 border만 그렇다 ! color는 ol에 속한 모든
+    li에 컬러를 입힌다.
+
+    ol id=lecture을 하는 이유는 ol이 두 개 있으니깐 구분하기 위해서!
+
+    ul,ol -> 두 개 동시에 css를 넣기 위해서 
+
+    <style media="screen">
+      ul li {
+        color:red;
+      }
+
+      #lecture>li {
+        border:1px solid red;
+        color:blue;
+      }
+
+      ul,ol{
+        background-color: powderblue;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JAVASCIRPT</li>
+    </ul>
+
+    <ol id=lecture>
+      <li>HTML</li>
+      <li>CSS
+        <ol>
+          <li>selector</li>
+          <li>declaration</li>
+        </ol>
+      </li>
+      <li>JAVASCIRPT</li>
+    </ol>
+  </body>
+
+</html>

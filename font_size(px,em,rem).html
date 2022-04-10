@@ -1,0 +1,20 @@
+<html>
+
+  <head>
+    px -> 고정된 폰트의 사이즈를 변경할 때
+    em, rem -> 사용자가 페이지의 폰트를 가변적으로 변경 할 수 있게 할때
+
+    누굴 써야하냐? rem을 거의 쓴다. 왜? 사용자가 폰트 크기를 조절 할 수 있는 권리를 주기위해
+    사용자가 폰트 크기를 바꿨을 때 px는 바뀌지 않고 rem은 바뀐다.
+    <style media="screen">
+      #px{font-size:16px;}
+      #rem{font_size:1rem;}
+    </style>
+  </head>
+
+  <body>
+    <div id = "px">PX</div>
+    <div id = "rem">REM</div>
+  </body>
+
+</html>

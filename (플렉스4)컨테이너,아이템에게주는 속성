@@ -1,0 +1,47 @@
+컨테이너 에게 주는 속성
+row , row-reverse, column, column-reverse
+
+flex-wrap -> 
+nowrap(기본값)
+wrap(컨테이너의 크기보다 아이템들의 크기가 크다면 줄바꿈이 됨)
+wrap-reverse
+
+align-itmes -> display 되는 순간 아이템들은 컨테이너 높이와 같아진다. 아이템 크기에 따라 높이를 다르게 하는것이 align-item
+stretch(기본값)
+flex-start -> 아이템들이 각각의 크기만하게 하는것, 만약 3이 가장크고 1245는 같다면 1245는 크기가 같고 3만 크기가 큰 아이템이 될 것이다.
+위로정렬
+flex-end -> 자신의 크기를 같게되고 밑으로 정렬, flex-start와 반대 
+center ->  자신의 크기를 같게되고 센터으로 정렬
+baseline
+
+justify-content 
+flex-start
+flex-end
+center -> 화면 가운데에 위치하게 만듬
+
+
+
+아이템 에게 주는 속성
+
+align-self  -> align-items에 고정되어있는 것들중 특정한 것만 값을 주고싶을 때 사용
+
+order -> 아이템들의 순서를 바꾸고싶을 때
+
+
+메인이 0 nav이1 aside2 일때 nav 가 먼저 나오게 하고싶다면?
+
+nav{
+    order:0;
+}
+main{
+    order:1;
+}
+aside{
+    order:2;
+}
+
+or 
+
+nav{
+    order:-1;
+}

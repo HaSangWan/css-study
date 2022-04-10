@@ -1,0 +1,29 @@
+<html>
+
+  <head>
+    상속을 사용하는 이유: 부모의 컬러를 자식들이 물려받는 것이 효율적이다.
+    다른 색상을 주고싶은 것만 선택해서 바꾸는 것이 훨씬 효율적이다.
+    더 적은 코드로 많은 일을 할 수있다.
+      <style>
+      /*li{color:green;}*/
+
+      /*h1{color:blue;}*/
+
+      html{color:blue;}  /*가장 밖의 html */
+      #select{color:black;}
+
+      body{border:1px solid black;} /* 원래는 body안에있는 모든 것이 상속되어야하지만 border같은 경우는 상속되자않고 color는 상속되어진다. 즉 각 속성마다 틀리다.*/
+
+      </style>
+  </head>
+
+  <body>
+    <h1>수업내용</h1>
+    <ul>
+      <li>html</li>
+      <li>css</li>
+      <li id ="select">javascript</li>
+    </ul>
+  </body>
+
+</html>
